@@ -1,0 +1,113 @@
+/**ÜRÜN HTML**/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -55px;
+}
+
+.product-container {
+    text-align: center;
+    margin-left: -755px;
+}
+
+.main-image img {
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -55px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.thumbnail.active,
+.thumbnail:hover {
+    border: 2px solid #333;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 33px;
+}
+
+.prevv-btn,
+.nextt-btn {
+    background: none;
+    border: 2px solid #333;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.prevv-btn:hover,
+.nextt-btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+.coffe-top {
+    margin-top: 215px;
+    margin-left: -144px;
+}
+
+.coffe-tanitim h1 {
+    margin-left: 780px;
+    margin-top: -730px;
+    font-size: 29px;
+}
+
+.coffe-tanitim h3 {
+    margin-left: 776px;
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.coffe-icon p {
+    margin: 12px;
+    padding: 0px 150px;
+    margin-left: 640px;
+    color: grey;
+}
+
+.coffee-icons {
+    display: flex;
+    justify-content: center;
+    gap: 47px;
+    padding: 11px 0;
+    margin-left: 560px;
+}
+
+.coffee-icons .icon {
+    width: 66px;
+    height: 66px;
+}
+
+.coffe-p {
+    color: grey;
+    padding: 22px 115px;
+    margin-left: 673px;
+}
+
+.kahve-urun-dizaynn .urunlerimizzz {
+    margin-top: 622px;
+}

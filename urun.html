@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="urun.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="website icon" type="png" href="images/img.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="website icon" type="png" href="images/img.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>GOLDEN GROUP</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="iletisim">
+            <i class="fa-regular fa-message"></i>
+            <p>İletişim Kurun</p>
+        </div>
+        <div class="text-slider">
+            <p>Bizi Takip Edin.</p>
+            <p>İndirimleri kaçırmayın.</p>
+        </div>
+        <div class="language">
+            <img src="https://cdn-icons-png.flaticon.com/128/5111/5111656.png" alt="Language">
+        </div>
+    </div>
+
+
+    <main>
+        <div class="header1">
+            <div class="header1-container">
+                <div class="logo"><a href="index.html">
+                        <img src="images/logo1.png" alt="">
+                    </a>
+                </div>
+
+                <div class="search-header">
+                    <input type="text" class="search-box" placeholder="Arama yapın..." id="searchInput">
+                    <button class="search-button" onclick="performSearch()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <div class="search-results" id="searchResults"></div>
+
+                    <div class="user">
+                        <h1>USER</h1>
+                        <i class="ri-user-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="acilir-menu">
+        <div class="menu">
+            <i class="ri-menu-2-fill"></i>
+            <p>Menü</p>
+            <ul class="dropdown-content">
+                <li>İndirim</li>
+                <li>Kahve</li>
+                <li>Pasta Malzemeleri</li>
+                <li>Soslar</li>
+                <li>Kampanya</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown-men">
+        <div class="menu-slider">
+            <i class="ri-percent-line"></i>
+            <p>İndirim</p>
+        </div>
+        <div class="menu-slider">
+            <i class="fa-solid fa-wine-bottle"></i>
+            <p>Soslar</p>
+
+        </div>
+        <div class="menu-slider">
+            <i class="fa-solid fa-mug-hot"></i>
+            <p>Kahve</p>
+        </div>
+        <div class="menu-slider">
+            <i class="ri-cake-line"></i>
+            <p>Pasta Malzemeleri</p>
+        </div>
+        <div class="menu-slider">
+            <i class="ri-megaphone-line"></i>
+            <p>Kampanya</p>
+        </div>
+        <div class="menu-slider">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <p>Hesaplı Alışveriş</p>
+        </div>
+    </div>
+
+
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slidess">
+                <img src="https://www.hazerbaba.com/themes/at_nova/assets/img/modules/leoslideshow/3a.jpg"
+                    alt="Resim 1">
+            </div>
+            <div class="slidess">
+                <img src="https://www.hazerbaba.com/themes/at_nova/assets/img/modules/leoslideshow/4a.jpg"
+                    alt="Resim 2">
+            </div>
+        </div>
+
+        <div class="controlss">
+            <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/klasik-doypack.png"
+                        alt="Brazil Mogiana" id="mainImage">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/klasik.png"
+                        class="thumbnail active" onclick="changeImage(this)">
+                    <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/klasik-kavanoz.png"
+                        class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/gold-doypack.png"
+                        class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/gold-kavanoz.png"
+                        class="thumbnail" onclick="changeImage(this)">
+                </div>
+                <div class="navigation-buttons">
+                    <button class="prevv-btn" onclick="prevImage()">&#10094;</button>
+                    <button class="nextt-btn" onclick="nextImage()">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="coffe-top">
+        <div class="coffe-tanitim">
+            <h1>GOLDEN BEST</h1>
+            <h3>Lezzetin tanımı</h3>
+            <div class="coffe-icon">
+                <p>Kahve, yüzyıllardır dünya genelinde en sevilen içeceklerden biri olmuştur. "Classic Coffee"
+                    (Klasik
+                    Kahve)
+                    terimi, genellikle geleneksel yöntemlerle hazırlanan, saf ve özüne sadık kahve deneyimini ifade
+                    eder.
+                    Türk
+                    kahvesi, filtre kahve, espresso ve French Press gibi demleme teknikleri, klasik kahve kültürünün
+                    temelini
+                    oluşturur.</p>
+            </div>
+            <div class="coffee-icons">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/128/10554/10554308.png" alt="Coffee icon">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/128/5181/5181434.png" alt="Coffee icon">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/128/751/751621.png" alt="Coffee icon">
+            </div>
+            <div class="coffe-p">
+                Taze çekilmiş orta kalınlıkta kahve kullanın.
+
+                90-96°C arasında su kaynatın.
+
+                Filtreye kahveyi koyup blooming (ıslatma) yapın (30 sn bekleyin).
+
+                Yavaşça suyu ekleyerek 3-4 dakika demlenmesini sağlayın.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="kahve-urun-dizaynn">
+        <div class="urunlerimizzz">
+            <h1> KAHVE GRUPLARI</h1>
+            <div class="alt-cizgiii">
+                <svg viewBox="0 0 250 20" preserveAspectRatio="none">
+                    <path d="M0,10 C50,0 100,20 150,10 C200,0 250,20 250,10 L250,20 L0,20 Z" fill="orange">
+                    </path>
+                </svg>
+            </div>
+
+            <div class="urun-slider-containerr">
+                <button class="prev-btnn"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="urun-item-wrapperr">
+                    <div class="urun-item-containerrr">
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/gold-kavanoz.png"
+                                alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/4in1-karamelli.png"
+                                alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/4in1-karamelli.png"
+                                alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/4in1-karamelli.png"
+                                alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/hazir-turk-kahvesi/orta.png" alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/hazir-sutlu-turk-kahvesi/sekerli.png"
+                                alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/turk-kahvesi/turk-kahvesi.png" alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/kahve-kremasi-doypack.png"
+                                alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/klasik.png" alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/3in1-50li.png" alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/gold-kavanoz.png"
+                                alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/3in1-50li.png" alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/gold-kavanoz.png"
+                                alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/klasik.png" alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                        </div>
+                        < <div class="urun-itemmm">
+                            <p class="indirimmm">-5%</p>
+                            <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/klasik.png" alt="">
+                            <div class="urun-kutuuu">
+                                <h2>Docile Lorem dolor aliquam.</h2>
+                                <h3>Lorem isum, sit conse.</h3>
+                                <button class="incele-btnn">İncele</button>
+                            </div>
+                    </div>
+
+                    <div class="urun-itemmm">
+                        <p class="indirimmm">-5%</p>
+                        <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/3in1-50li.png" alt="">
+                        <div class="urun-kutuuu">
+                            <h2>Docile Lorem dolor aliquam.</h2>
+                            <h3>Lorem isum, sit conse.</h3>
+                            <button class="incele-btnn">İncele</button>
+                        </div>
+                    </div>
+                    <div class="urun-itemmm">
+                        <p class="indirimmm">-5%</p>
+                        <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/gold-kavanoz.png" alt="">
+                        <div class="urun-kutuuu">
+                            <h2>Docile Lorem dolor aliquam.</h2>
+                            <h3>Lorem isum, sit conse.</h3>
+                            <button class="incele-btnn">İncele</button>
+                        </div>
+                    </div>
+                    <div class="urun-itemmm">
+                        <p class="indirimmm">-5%</p>
+                        <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/klasik.png" alt="">
+                        <div class="urun-kutuuu">
+                            <h2>Docile Lorem dolor aliquam.</h2>
+                            <h3>Lorem isum, sit conse.</h3>
+                            <button class="incele-btnn">İncele</button>
+                        </div>
+                    </div>
+                    <div class="urun-itemmm">
+                        <p class="indirimmm">-5%</p>
+                        <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/klasik.png" alt="">
+                        <div class="urun-kutuuu">
+                            <h2>Docile Lorem dolor aliquam.</h2>
+                            <h3>Lorem isum, sit conse.</h3>
+                            <button class="incele-btnn">İncele</button>
+                        </div>
+                    </div>
+
+                    <div class="urun-itemmm">
+                        <p class="indirimmm">-5%</p>
+                        <img src="https://www.goldengrup.com/resimler/urunler/instant-coffee/3in1-50li.png" alt="">
+                        <div class="urun-kutuuu">
+                            <h2>Docile Lorem dolor aliquam.</h2>
+                            <h3>Lorem isum, sit conse.</h3>
+                            <button class="incele-btnn">İncele</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btnn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="dalga1">
+        <div class="custom-shape-divider-bottom-1742071621">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="dalga2">
+        <div class="custom-shape-divider-top-1742071670">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="dalga-text">
+        <h1>GOLDEN GROUP'DAN EN SON HABERLERLE GÜNCEL KALIN</h1>
+    </div>
+    <div class="text-cizgi">
+        <svg viewBox="0 0 250 20" preserveAspectRatio="none">
+            <path d="M0,10 C50,0 100,20 150,10 C200,0 250,20 250,10 L250,20 L0,20 Z" fill="orange"></path>
+        </svg>
+    </div>
+    <div class="kayit-formu">
+        <input type="text" placeholder="Adınız Soyadınız" class="ad-soyad-input">
+        <input type="email" placeholder="E-posta" class="eposta-input">
+        <button class="kayit-ol-butonu">Kayıt Ol</button>
+    </div>
+
+    <div class="text-p">
+        <p><strong>Kayıt Ol'a </strong>tıklayarak <b>indirimler</b> ve <b>promosyonlar</b> hakkında bildirimler
+            almayı kabul ediyorsunuz.</p>
+    </div>
+
+
+    <div class="text-item">
+        <p>KEŞFETMEK LEZZETLİDİR!</p>
+        <div class="textt-cizgi">
+            <svg viewBox="0 0 250 20" preserveAspectRatio="none">
+                <path d="M0,10 C50,0 100,20 150,10 C200,0 250,20 250,10 L250,20 L0,20 Z" fill="orange"></path>
+            </svg>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="logoo"><img src="images/logo1.png" alt=""></div>
+            <div class="kategori">
+                <h1>Kategori</h1>
+                <ul>
+                    <li>Doğal Ürünler</li><br>
+                    <li>100% Şeker Kamışı</li><br>
+                    <li>Katkısız Organik Ürünler</li><br>
+                </ul>
+            </div>
+
+            <div class="kurumsal">
+                <h1>Kurumsal</h1>
+                <ul>
+                    <li>
+                        Hakkımzda
+                    </li><br>
+                    <li>Etik Kurallar</li><br>
+                    <li>Sürdürülebilir</li><br>
+                    <li>Ürünler</li>
+                </ul>
+            </div>
+
+            <div class="hizmet">
+                <h1>Hizmet</h1>
+                <ul>
+                    <li>Pazartesinden Cumaya</li><br>
+                    <li>08:00 - 18:00</li><br>
+                    <li>info.goldengroup@gmail.com</li><br>
+                    <li>0 345 222 555 </li><br>
+                </ul>
+            </div>
+
+            <div class="social-media">
+                <h1>SOSYAL MEDYA</h1>
+                <div class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="credi-cart">
+                <div class="cart-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/179/179457.png" alt="">
+                </div>
+
+                <div class="cart-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/217/217445.png" alt="">
+                </div>
+
+                <div class="cart-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/196/196539.png" alt="">
+                </div>
+
+                <div class="cart-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <button id="scrollTop"><i class="fa-solid fa-arrow-up"></i></button>
+    </footer>
+
+
+
+    <script src="urun.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
